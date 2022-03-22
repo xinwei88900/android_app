@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@color/white">
+    
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/foodanddrink" />
+
+    <LinearLayout
+        android:id="@+id/item_lv_main_lv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf ="@+id/item_iv"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+        android:id="@+id/item_lv_main_lv1_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Nourriture et boisson" />
+        
+        <TextView
+            android:id="@+id/item_lv_main_lv1_tv_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="Restaurant" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_lv_main_lv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_lv_main_lv2_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="55.0 €" />
+
+        <TextView
+            android:id="@+id/item_lv_main_lv2_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="Aujourd'hui 18:10" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

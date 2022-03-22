@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Gestion des dépenses</string>
+
+    <string name="monthly_income">Revenus du mois</string>
+    <string name="monthly_outcome">Dépenses du mois</string>
+
+    <string name="income">Revenu</string>
+    <string name="outcome">Dépense</string>
+
+    <string name="editTextZone">Saisir le montant</string>
+    <string name="add_notes">Ajouter des notes</string>
+
+    <string name="edit_remarks">Editer les notes:</string>
+
+    <string name="dialog_button_valid">Valider</string>
+    <string name="dialog_button_cancel">Annuler</string>
+    <string name="Set_up">Paramètres</string>
+    <string name="Analyse">Analyse</string>
+
+    <string name="loginText">Saisir le mot de passe:</string>
+    <string name="loginBtn">Entrer</string>
+</resources>

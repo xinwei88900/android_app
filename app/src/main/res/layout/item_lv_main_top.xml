@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/item_top_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:text="01 Juin 2021" />
+
+        <TextView
+            android:id="@+id/item_top_tv_depense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_top_tv_date"
+            android:layout_marginTop="10dp"
+            android:text="@string/monthly_outcome" />
+
+        <TextView
+            android:id="@+id/item_top_tv_depense_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_top_tv_depense"
+            android:layout_marginTop="10dp"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="430.0 €" />
+
+        <TextView
+            android:id="@+id/item_top_tv_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_top_tv_date"
+            android:layout_marginTop="10dp"
+            android:text="@string/monthly_income" />
+
+        <TextView
+            android:id="@+id/item_top_tv_revenue_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_top_tv_revenue"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:text="2000.0 €" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_top_tv_daily_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:text="Depenses d'aujourd'hui 20.0€ , revenus d'aujourd'hui 0€." />
+
+
+</LinearLayout>

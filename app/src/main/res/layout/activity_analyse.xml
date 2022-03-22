@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalyseActivity"
+    android:background="@color/background_grey1">
+
+    <LinearLayout
+        android:id="@+id/analyse_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/analyse_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cross"
+            android:layout_margin="10dp"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/analyse_tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="@string/Analyse" />
+    </LinearLayout>
+
+</RelativeLayout>

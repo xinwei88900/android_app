@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey1">
+
+    <RelativeLayout
+        android:id="@+id/frag_outcome_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/frag_outcome_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/elsered"/>
+
+        <TextView
+            android:id="@+id/frag_outcome_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frag_outcome_iv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Autres" />
+
+        <EditText
+            android:id="@+id/frag_outcome_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:background="@color/white"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/frag_outcome_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frag_outcome_rl"
+        android:background="@color/background_grey1" />
+
+    <GridView
+        android:id="@+id/frag_outcome_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frag_outcome_line1"
+        android:background="@color/white"
+        android:numColumns="5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/frag_outcome_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keyBackground="@color/background_grey1"
+        android:keyTextColor="@color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:shadowColor="@color/white"
+        android:shadowRadius="0.0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_above="@+id/frag_outcome_keyboard">
+
+        <TextView
+            android:id="@+id/frag_outcome_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01 Juin 2021 08:00"
+            android:layout_alignParentRight="true"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/frag_outcome_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_notes"
+            android:layout_toLeftOf="@+id/frag_outcome_time"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
